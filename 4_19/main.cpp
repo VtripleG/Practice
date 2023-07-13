@@ -1,9 +1,9 @@
 #include <iostream>
 
-class Position
+class Point
 {
 public:
-    Position(int x, int y)
+    Point(int x, int y)
     {
         this->x = x;
         this->y = y;
@@ -11,7 +11,7 @@ public:
     uint x;
     uint y;
 
-    ~Position()
+    ~Point()
     {
     }
 };
@@ -22,11 +22,11 @@ int main()
 
     std::cout << "Enter left bottom angle position of first rect" << std::endl;
     std::cin >> x >> y;
-    Position *firstAngleLeft = new Position(x, y);
+    Point *firstAngleLeft = new Point(x, y);
 
     std::cout << "Enter left bottom angle position of second rect" << std::endl;
     std::cin >> x >> y;
-    Position *secondAngleLeft = new Position(x, y);
+    Point *secondAngleLeft = new Point(x, y);
 
     std::cout << "Enter sides sizes of first rect(width, hight)" << std::endl;
     std::cin >> x >> y;
@@ -48,7 +48,7 @@ int main()
     else
         y = secondAngleLeft->y;
 
-    Position *leftBottomAngle = new Position(x, y);
+    Point *leftBottomAngle = new Point(x, y);
 
     if ( firstAngleLeft->x + widthFirstRect > secondAngleLeft->x + widthSecondRect )
         x = firstAngleLeft->x + widthFirstRect;
@@ -63,7 +63,7 @@ int main()
     delete(firstAngleLeft);
     delete(secondAngleLeft);
 
-    Position *rightTopAngle = new Position(x, y);
+    Point *rightTopAngle = new Point(x, y);
 
     std::cout << "Left bottom pos: (" << leftBottomAngle->x << ", " << leftBottomAngle->y << ")" << std::endl << "Right bottom pos: (" << rightTopAngle->x << ", " << rightTopAngle->y << ")" << std::endl;
 

@@ -1,10 +1,10 @@
 #include <iostream>
 #include <cstdlib>
 
-class Position
+class Point
 {
 public:
-    Position(int v, int h)
+    Point(int v, int h)
     {
         this->v = v;
         this->h = h;
@@ -12,12 +12,12 @@ public:
     uint h;
     uint v;
 
-    ~Position()
+    ~Point()
     {
     }
 };
 
-bool RookAndRook ( Position* whitePosition, Position* blackPosition, Position* endWhitePosition )
+bool RookAndRook ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
 {
     if( ( ( whitePosition->h == endWhitePosition->h ) || ( whitePosition->v == endWhitePosition->v ) ) &&
             ( ( blackPosition->h != endWhitePosition->h ) && ( blackPosition->v != endWhitePosition->v ) ) )
@@ -27,7 +27,7 @@ bool RookAndRook ( Position* whitePosition, Position* blackPosition, Position* e
     return false;
 }
 
-bool RookAndQueen ( Position* whitePosition, Position* blackPosition, Position* endWhitePosition )
+bool RookAndQueen ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
 {
     if( ( ( whitePosition->h == endWhitePosition->h ) || ( whitePosition->v == endWhitePosition->v ) ) &&
             ( ( blackPosition->h != endWhitePosition->h ) && ( blackPosition->v != endWhitePosition->v ) ) &&
@@ -38,7 +38,7 @@ bool RookAndQueen ( Position* whitePosition, Position* blackPosition, Position* 
     return false;
 }
 
-bool RookAndHorse ( Position* whitePosition, Position* blackPosition, Position* endWhitePosition )
+bool RookAndHorse ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
 {
 
 }
@@ -50,9 +50,9 @@ int main()
     std::cout << "Enter 3 position:\n1.Position white shape\n2.Position black shape\n3.End position for white shape" << std::endl;
     std::cin >> a >> b >> c >> d >> e >> f;
 
-    auto whitePosition = new Position( a, b );
-    auto blackPosition = new Position( c, d );
-    auto endWhitePosition = new Position(e, f );
+    auto whitePosition = new Point( a, b );
+    auto blackPosition = new Point( c, d );
+    auto endWhitePosition = new Point(e, f );
 
     if( RookAndQueen( whitePosition, blackPosition, endWhitePosition ) )
     {

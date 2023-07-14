@@ -15,5 +15,7 @@ add_subdirectory(4_115)
 add_subdirectory(4_141)
 add_subdirectory(5_26)
 add_subdirectory(5_38)
+add_subdirectory(5_65)
+
 add_custom_target(ProjectRelatedFiles SOURCES
  .astylerc)

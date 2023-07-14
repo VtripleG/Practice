@@ -2,12 +2,11 @@
 
 int main()
 {
-    int a;
-    int b;
+  int a;
+  int b;
 
-    std::cout << "Enter a and b" << std::endl;
-    std::cin >> a >> b;
+  std::cout << "Enter a and b" << std::endl;
+  std::cin >> a >> b;
 
-
-    return 0;
+  return 0;
 }

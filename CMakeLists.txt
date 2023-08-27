@@ -24,6 +24,9 @@ add_subdirectory(11_248)
 add_subdirectory(13_54)
 add_subdirectory(14_59)
 add_subdirectory(15_31)
+add_subdirectory(16_21)
+add_subdirectory(17_26)
+
 
 
 

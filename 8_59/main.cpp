@@ -4,7 +4,7 @@ int main()
 {
   const int maxNum = 7;
 
-  for ( int denominator = 2; denominator <= 7; denominator++ )
+  for ( int denominator = 2; denominator <= maxNum; denominator++ )
     for ( int numerator = 1 ; numerator < denominator; numerator++ )
     {
       bool flag = true;

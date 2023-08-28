@@ -36,11 +36,6 @@ bool RookAndQueen ( Point* whitePosition, Point* blackPosition, Point* endWhiteP
   return false;
 }
 
-bool RookAndHorse ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
-{
-
-}
-
 int main()
 {
   uint a, b, c, d, e, f;

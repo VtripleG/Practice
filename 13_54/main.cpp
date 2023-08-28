@@ -35,7 +35,7 @@ public:
   }
 };
 
-int DrawNumber ( std::vector <Team>& teamsList )
+int DrawNumber ( const std::vector <Team>& teamsList )
 {
   int drawCount = 0;
 
@@ -51,7 +51,7 @@ int DrawNumber ( std::vector <Team>& teamsList )
 
 }
 
-int DifferenceNumber ( std::vector <Team>& teamsList )
+int DifferenceNumber ( const std::vector <Team>& teamsList )
 {
   int differenceCount = 0;
 
@@ -84,7 +84,7 @@ void PointsScore ( std::vector <Team>& teamsList )
     }
 }
 
-void WhoIsChampion ( std::vector <Team>& teamsList )
+void WhoIsChampion ( const std::vector <Team>& teamsList )
 {
   int championNumber = 0;
   int championScore = teamsList[0].pointsScore;

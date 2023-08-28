@@ -17,7 +17,7 @@ public:
   }
 };
 
-bool RookAndRook ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
+bool RookAndRook ( const Point* whitePosition, const Point* blackPosition, const Point* endWhitePosition )
 {
   if ( ( ( whitePosition->h == endWhitePosition->h ) || ( whitePosition->v == endWhitePosition->v ) ) &&
        ( ( blackPosition->h != endWhitePosition->h ) && ( blackPosition->v != endWhitePosition->v ) ) )
@@ -26,7 +26,7 @@ bool RookAndRook ( Point* whitePosition, Point* blackPosition, Point* endWhitePo
   return false;
 }
 
-bool RookAndQueen ( Point* whitePosition, Point* blackPosition, Point* endWhitePosition )
+bool RookAndQueen ( const Point* whitePosition, const Point* blackPosition, const Point* endWhitePosition )
 {
   if ( ( ( whitePosition->h == endWhitePosition->h ) || ( whitePosition->v == endWhitePosition->v ) ) &&
        ( ( blackPosition->h != endWhitePosition->h ) && ( blackPosition->v != endWhitePosition->v ) ) &&

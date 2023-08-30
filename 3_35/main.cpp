@@ -1,9 +1,8 @@
 #include <iostream>
 #include <cstdlib>
 
-class Point
+struct Point
 {
-public:
   Point( int v, int h )
   {
     this->v = v;

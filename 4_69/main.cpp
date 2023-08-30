@@ -1,9 +1,8 @@
 #include <iostream>
 #include <vector>
 
-class Point
+struct Point
 {
-public:
   Point( int x, int y )
   {
     this->x = x;

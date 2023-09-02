@@ -27,7 +27,7 @@ std::vector<Point> GetAllPoints ( const Point* leftBottomAngle, const int width,
   return rectPoints;
 }
 
-bool FirstInSecond ( const std::vector<Point> firstRect, const std::vector<Point> secondRect )
+bool FirstInSecond ( const std::vector<Point>& firstRect, const std::vector<Point>& secondRect )
 {
   bool flag;
 
@@ -51,7 +51,7 @@ bool FirstInSecond ( const std::vector<Point> firstRect, const std::vector<Point
   return true;
 }
 
-bool SecondInFirst ( const std::vector<Point> firstRect, const std::vector<Point> secondRect )
+bool SecondInFirst ( const std::vector<Point>& firstRect, const std::vector<Point>& secondRect )
 {
   bool flag;
 
@@ -75,7 +75,7 @@ bool SecondInFirst ( const std::vector<Point> firstRect, const std::vector<Point
   return true;
 }
 
-bool intersectionOfRects ( const std::vector<Point> firstRect, const std::vector<Point> secondRect )
+bool intersectionOfRects ( const std::vector<Point>& firstRect, const std::vector<Point>& secondRect )
 {
   for ( auto const& firstRectPoint : firstRect )
     for ( auto const& secondRectPoint : secondRect )
